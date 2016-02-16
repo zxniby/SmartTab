@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="qb_transparent">#01000000</color>
+     <color name="qb_black_light">#444444</color>
+    <color name="qb_tip_text_color">#777777</color>
+    <color name="qb_white">#ffffffff</color>
+    <color name="qb_black">#ff000000</color>
+    <color name="qb_common_bg_color">#ffffff</color>
+    <color name="qb_title_bg">#f8f8f8</color>
+    <color name="qb_title_bg_red">#ee4634</color>
+    <color name="qb_orange_color">#ee4634</color>
+    <color name="qb_orange_color1">#ff4634</color>
+    <color name="qb_ucf_dialog_bg_color">#fafafa</color>
+    <color name="qb_dark_gray">#333333</color>
+    <color name="qb_gray3">#909090</color>
+    <color name="qb_gray4">#8a95a3</color>
+    <color name="qb_link_blue">#5ca9e4</color>
+    <color name="qb_red_invest">#f64272</color>
+    <color name="qb_red_pressed">#e1295b</color>
+    <color name="qb_btn_disable">#d4d5d6</color>
+    <color name="qb_btn_blue_normal">#5ca9e4</color>
+    <color name="qb_light_text_color">#909ba8</color>
+    <color name="qb_light_background_color">#fafafa</color>
+     <color name="qb_bao_nocolor">#00000000</color>
+    <color name="qb_half_black">#55000000</color>
+    <!-- 网信钱包 -->
+    <color name="qb_qb_card_bg_color">#DA504E</color>
+    <color name="qb_main_bg_color">#FFF5F7F6</color>
+    <color name="qb_main_bg_color_gray">#FFF8F8F6</color>
+    <color name="qb_qb_line_color">#D7D7D7</color>
+    <color name="qb_trade_record_item_top">#323f48</color>
+
+</resources>

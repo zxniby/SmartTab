@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <!-- 背景颜色 -->
+    <color name="dark_backgroud_color">#2e353f</color>
+    <color name="light_background_color">#fafafa</color>
+    <color name="light_identity_background_color">#f7f7f7</color>
+    <color name="pink_background_color">#f6ece5</color>
+    <color name="dialog_background_color">#eeeeee</color>
+    <color name="dialog_iknow_color">#2087fa</color>
+    <color name="orange_background_color">#ff6648</color>
+    <color name="guide_title_red">#fe0468</color>
+    <!-- 3.2背景颜色start -->
+    <color name="grey_background_color_common">#efeff4</color>
+    <!-- 3.2 背景颜色end-->
+
+    <!-- Text Color -->
+    <color name="orange_text_color">#ff6600</color>
+    <color name="blue_text_color">#3b79ae</color>
+    <color name="black_text_color">#535353</color>
+    <color name="black_number_color">#ff6600</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#c0c0c0</color>
+    <color name="white">#ffffff</color>
+    <color name="light_text_color">#c8d9e3</color>
+    <color name="red_text_color">#ef0000</color>
+    <color name="green_text_color">#3cb025</color>
+    <color name="link_text_color">#0079ff</color>
+    <color name="hint_text_color">#909ba8</color>
+    <color name="guide_content_color">#7e7e7e</color>
+
+    <!-- listview分割线颜色  /输入框边框颜色 -->
+    <color name="seperator_line_color">#cccccc</color>
+
+    <!-- 列表边框颜色 -->
+    <color name="cell_border_color">#d9d9d9</color>
+
+    <!-- 首页卡片分割线 -->
+    <color name="card_line_color">#c8ccd1</color>
+    <color name="setting_more_bg">#fafafa</color>
+    <color name="setting_more_stroke">#d9d9d9</color>
+    <color name="rechargecolor">#0f25ef</color>
+    <color name="tabsel_tabtext_color">#feccbc</color>
+    <color name="tabsel_tabtext_sel_color">#f94c2e</color>
+    <color name="tabtext_color">#ee4634</color>
+    <color name="setting_itembg_singlecolor">#ececec</color>
+    <color name="search_item_blue">#157efb</color>
+    <color name="search_item_orange">#fd620d</color>
+    <color name="search_item_title_bg">#f7f7f7</color>
+    <color name="search_edit_bg">#e7e7e7</color>
+    <color name="keyboard_digital">#e2e2e2</color>
+    <color name="keyboard_character">#a9b5c0</color>
+
+    <!-- 徐高翔添加start -->
+    <color name="investitem_especialtitle">#ff8092</color>
+    <color name="norecode_tips">#D6D6D6</color>
+    <color name="hometitle_color">#f64573</color>
+    <color name="lightgraytextcolortips">#a5aebc</color>
+    <!-- 账户资金Menu上的 冻结金额,待收收益tips颜色 -->
+    <color name="lightgraytextcolor">#cfd3da</color>
+    <!-- 账户资金Menu上的 冻结金额,待收收益等的字体颜色 -->
+    <color name="darkpink">#f2446f</color>
+    <color name="leftmenu_recharge">#96d67a</color>
+    <color name="leftmenu_withdrawals">#5ca9e4</color>
+    <color name="leftmenu_item">#3b434d</color>
+    <color name="leftmenu_splitline">#59616a</color>
+    <color name="main_head_title">#41474d</color>
+    <color name="main_head_percent">#4b4b4b</color>
+    <color name="main_head_progresscirclebg">#ededed</color>
+    <color name="gestureline">#ffffff</color>
+    <color name="gesture_pink_text_color">#f6698f</color>
+    <color name="gesture_text_color">#b2a9a9a9</color>
+    <color name="gesture_topcolor">#97a1ac</color>
+    <color name="titlecolor">#4a4a4a</color>
+    <color name="morebg">#e6eaec</color>
+    <color name="moreitemline">#e7e9e9</color>
+    <color name="thingray">#6d7379</color>
+    <color name="lightgray">#dde1e3</color>
+    <color name="settingtextcolor">#adb5be</color>
+    <color name="settingswitchbg">#94d67a</color>
+    <color name="dialogcanceltextcolor">#353a3f</color>
+    <color name="xlistheadtextcolor">#909ba8</color>
+    <color name="investsuccesscolor">#5faae2</color>
+    <color name="settings_lightblue_selcolor">#1caae0</color>
+    <color name="redgiftcontentbg">#cc1244</color>
+    <color name="redgifttextcolor">#fc104a</color>
+    <color name="redgiftcontenttextcolor">#fff1a6</color>
+    <color name="redgiftcontentbuttonbg">#ffcd66</color>
+    <color name="loadfunditem_holdshare">#5faae2</color>
+    <color name="transaction_records_info">#bdc3cb</color>
+    <color name="rlc_gvitem_bg">#159bb4d6</color>
+    <color name="rlc_more_bg">#25ffffff</color>
+    <color name="rlc_gv_space">#25edf4ff</color>
+    <color name="contaceustextcolor">#8c96a2</color>
+    <color name="contaceuscallbg">#5ca9e4</color>
+    <color name="tab_bottombg">#fbfbfb</color>
+    <color name="tab_bottomtextcolor">#909ca7</color>
+    <color name="tab_bottomlinecolor">#d9e1e8</color>
+    <color name="tab_main_mine_tip">#bbbbbb</color>
+    <color name="tab_main_mine_recharge">#f34774</color>
+    <color name="tab_main_mine_withdrawals">#199bfc</color>
+    <color name="tab_main_mine_line">#e8e8e8</color>
+    <color name="tab_main_mine_bg">#f2f2f2</color>
+    <color name="regist_phone_place">#2397c6</color>
+
+
+    <!-- 配资相关 -->
+    <color name="pz_color_blue">#5faae2</color>
+    <color name="pz_color_yellow">#fbb45f</color>
+    <color name="pz_color_red">#fc5558</color>
+    <color name="pz_color_gray">#bbbbbb</color>
+    <color name="pz_color_grayline">#f1f2f1</color>
+
+    <!-- 3.2UI改版 -->
+    <color name="new_bg">#ee4634</color>
+    <color name="new_bg_sel">#8c291f</color>
+    <color name="invest_item_smcolor">#8f8f8f</color>
+    <color name="invest_item_graycolor">#7e7e7e</color>
+    <color name="invest_fund_bottomitem_graybg">#f2f2f2</color>
+    <color name="maintab_mine_labelcolor">#929292</color>
+    <color name="maintab_mine_grayline">#e9e9e9</color>
+    <color name="maintab_mine_grayline2">#e4e4e4</color>
+    <color name="investment_projecttextcolor">#030303</color>
+
+    <color name="investment_projecttextcolor_investing">#5abbf6</color>
+    <color name="investment_projecttextcolor_repaying">#00d348</color>
+    <color name="investment_projecttextcolor_payoff">#ff7e00</color>
+    <color name="investment_projecttextcolor_full">#ff2144</color>
+    <color name="investment_projecttextcolor_redeem">#b38dd7</color>
+    <color name="investment_projecttextcolor_moneycolor">#ee4634</color>
+    <color name="investment_projecttextcolor_graycolor">#909090</color>
+    <color name="generalcolorfilter">#22000000</color>
+
+
+
+    <color name="ui_320_red">#ff0000</color>
+    <color name="ui_320_red1">#ee4634</color>  <!-- 按钮颜色-->
+    <color name="ui_320_red2">#8c291f</color>  <!-- 按钮按下颜色-->
+    <color name="ui_320_red3">#ee4634</color>
+
+    <color name="ui_320_gray1">#000000</color>  <!-- 标题,类目名称,ist -->
+    <color name="ui_320_gray2">#909090</color>  <!-- 注释,辅助 -->
+    <color name="ui_320_gray3">#d9d9d9</color>  <!-- 分割线 -->
+    <color name="ui_320_gray4">#efeff4</color>  <!-- 通用背景色 -->
+    <color name="ui_320_gray5">#f8f8f8</color>  <!-- navtitle-->
+    <color name="ui_320_gray6">#f2f2f2</color>  <!-- 一般内容区域底色-->
+    <color name="ui_320_gray7">#4d4d4d</color>  <!--消息推送标题-->
+    <color name="ui_320_gray8">#60ffffff</color>  <!--手势密码白灰色-->
+    <color name="ui_320_gray9">#1a000000</color>  <!--闪屏skip外圈-->
+    <color name="ui_320_gray10">#5e000000</color>  <!--闪屏skip内圈-->
+
+    <color name="ui_340_gray1">#c0909090</color>
+    <color name="ui_340_gray2">#fafafa</color>
+    <color name="ui_340_gray3">#e5e5e5</color>
+
+    <color name="ui_340_green1">#369100</color>
+    <color name="ui_340_green2">#388e3c</color>
+
+    <color name="ui_340_yellow1">#ff9600</color>
+    <color name="ui_340_yellow2">#F8D779</color>
+    <color name="ui_340_transparent">#00000000</color>
+
+    <color name="ui_340_white1">#F5F2F2F2</color>
+
+    <color name="ui_340_red1">#FFEE4634</color>
+
+    <color name="ui_340_blue1">#556ca1</color>
+
+    <color name="ui_340_grey1">#FFCCCCCC</color>
+
+
+
+    <!-- 徐高翔添加end -->
+
+
+    <!-- 赵进添加start -->
+    <color name="keyboard_select">#bcc0c4</color>
+    <color name="keyboard_unselect">#fcfcfc</color>
+    <color name="payment_success">#3cb025</color>
+    <color name="payment_failure">#aeb5bc</color>
+    <color name="paying">#f87594</color>
+    <color name="blue">#77c9f6</color>
+    <color name="red_invest">#f64172</color>
+    <color name="red_invest_sel">#e1295b</color>
+    <color name="black_invest">#e5eaeb</color>
+    <color name="investconfirm_background_color">#e6eaec</color>
+    <color name="setting_coupon_code">#5ca9e4</color>
+    <color name="white_backgroud_color">#f7f8f8</color>
+    <color name="title_investconfirm_color">#41474d</color>
+    <color name="ratetitle_investconfirm_color">#41474d</color>
+    <color name="ratecontent_investconfirm_color">#f64172</color>
+    <color name="allinvest_investconfirm_color">#5ca9e4</color>
+    <color name="regist_background_color">#e6eaec</color>
+    <color name="regist_text_color">#586068</color>
+    <color name="white_001">#5fffffff</color>
+    <!-- 白色 透明 -->
+    <color name="setting_dialog_cancel_code">#d4d5d6</color>
+    <color name="setting_dialog_background_color">#fafafa</color>
+    <color name="guide">#f3f9fd</color>
+    <!-- 赵进添加end -->
+
+    <color name="grey_default">#cccccc</color>
+    <color name="grey_focused">#999999</color>
+    <color name="transparent">#0000</color>
+
+    <!-- 华洲 start -->
+    <color name="make_allread">#ff3366</color>
+    <color name="light_black">#5E615E</color>
+    <color name="light_black2">#A8A8A8</color>
+    <color name="light_black3">#E9E4DB</color>
+    <!-- 华洲 end -->
+
+
+    <!-- 刘驰宇添加start -->
+    <color name="guide_bg_alpha">#d0000000</color>
+    <!-- 刘驰宇添加end -->
+    <!-- 基金状态色值 -->
+    <color name="fund_status_blue_color">#6bbbf3</color>
+    <color name="fund_status_orange_color">#fe8921</color>
+    <color name="fund_status_green_color">#5ec749</color>
+    <color name="fund_status_grey_color">#bfbfbf</color>
+
+
+
+    <!-- 配资 -->
+    <color name="peiziline">#dadcdb</color>
+    <color name="peizitext">#a1aab5</color>
+
+
+    <!--HappyNewYear Version-->
+    <color name="ui_hny_yellow1">#FFC848</color>
+    <color name="ui_hny_black1">#333333</color>
+    <color name="ui_hny_black2">#4D4D4D</color>
+    <color name="ui_hny_black3">#E1000000</color>
+    <color name="ui_hny_white1">#FFFFFF</color>
+    <color name="ui_hny_white2">#EFEFEF</color>
+    <color name="ui_hny_grey1">#909090</color>
+    <color name="ui_hny_grey3">#808080</color>
+    <!--HappyNewYear Version-->
+    <color name="ui_hny_grey2">#FF4D4D4D</color>
+</resources>

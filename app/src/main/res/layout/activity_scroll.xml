@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.xiangnanzhang.smarttab.InviteNewLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inll_bottom_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ui_340_green1">
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="DATA BLOCK"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <com.example.xiangnanzhang.smarttab.SmartTabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_smartlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:stl_defaultTabTextColor="@color/green_text_color"
+        app:stl_defaultTabTextHorizontalPadding="24dp"
+        app:stl_indicatorColor="@color/accent_material_dark"
+        app:stl_indicatorInterpolation="linear"
+        app:stl_indicatorThickness="3dp"
+        app:stl_underlineThickness="1dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</com.example.xiangnanzhang.smarttab.InviteNewLinearLayout>

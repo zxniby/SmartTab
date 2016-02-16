@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="qb_loading_tips">正在加载...</string>
+    <string name="qb_no_connection">无网络连接，请检查网络</string>
+    <string name="qb_connect_error">服务器连接错误</string>
+    <string name="qb_connect_timeout">请求超时，请重试</string>
+    <string name="qb_service_busy">系统繁忙，请稍后重试</string>
+    <!-- title bar text -->
+    <string name="qb_wallet_trade_record">交易记录</string>
+    <string name="qb_wallet_trade_detail">交易详情</string>
+    <string name="qb_wallet_title">网信钱包</string>
+    <string name="qb_wallet_state_succeed">支付成功</string>
+    <string name="qb_wallet_state_failed">支付失败</string>
+    <string name="qb_wallet_state_processing">支付处理中</string>
+    <string name="qb_wallet_state_not_pay">未支付</string>
+    <string name="qb_wallet_state_closed">交易关闭</string>
+
+    <!-- common strings -->
+    <string name="qb_ucfpay_provide">本服务由先锋支付提供</string>
+    <string name="qb_wxb_no_in_record">很抱歉，暂无交易记录</string>
+    <string name="qb_wallet_call">拨打人工客服电话：</string>
+    <string name="qb_wallet_bindcard_tip"> 请您先绑定一张信用卡，作为网信钱包的消费卡</string>
+    <string name="qb_wallet_net_error">网络出错，轻触屏幕重新加载</string>
+    <string name="qb_wallet_charge_phone">(充值手机号 %s)</string>
+    <!-- button text -->
+    <string name="qb_btn_i_know">我知道了</string>
+
+    <!-- tips text -->
+    <string name="qb_tips_phone_num">4008909888</string>
+    <string name="qb_tips_look_banks_list">查看支持银行列表</string>
+    <string name="qb_title_support_bank_list">支持的银行卡列表</string>
+    <string name="qb_wallet_processing_tips">您的请求服务器君还在思考中，请稍后再试~</string>
+    <!-- dialog text -->
+    <string name="qb_dialog_title">提醒</string>
+    <string name="qb_dialog_confirm">确定</string>
+    <string name="qb_dialog_cancel">取消</string>
+
+    <!-- 回调文案 -->
+    <string name="qb_callback_user_giveup">用户主动放弃</string>
+    <string name="qb_callback_succeed">成功</string>
+    <string name="qb_more">更多</string>
+    <string name="qb_card_manage">银行卡管理</string>
+    <string name="qb_goto_bind">此卡无法在钱包中进行解绑操作。如需更换，请登录官网或咨询客服</string>
+    <!--二维码-->
+    <string name="qb_scan_tips">将条码放入框内，即可自动扫描。如扫码失败，您也可返回前页，在输入框中手动录入。</string>
+</resources>

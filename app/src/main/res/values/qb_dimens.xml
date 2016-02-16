@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="qb_title_height">50dp</dimen>
+    <dimen name="qb_common_btn_height">46dp</dimen>
+    <dimen name="qb_editor_height">43dp</dimen>
+    <dimen name="qb_left_margin">15dp</dimen>
+    <dimen name="qb_right_margin">15dp</dimen>
+    <dimen name="qb_top_margin">20dp</dimen>
+    <dimen name="qb_row_gap">15dp</dimen>
+    <!-- 按钮弧度 -->
+    <dimen name="qb_btn_radis">5dp</dimen>
+    <dimen name="qb_btn_blue_radis">5dp</dimen>
+    <dimen name="qb_image_size">28dp</dimen>
+    <dimen name="qb_stub_image_size">25dp</dimen>
+    <dimen name="qb_border">5dp</dimen>
+    <dimen name="qb_margin">8dp</dimen>
+    <dimen name="qb_margin_top">15dp</dimen>
+    <dimen name="qb_text_size_14">14sp</dimen>
+    <dimen name="qb_text_size">16sp</dimen>
+</resources>
