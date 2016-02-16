@@ -59,7 +59,7 @@ public class InviteNewXListView extends XListView {
                     else{
                         if(this.getFirstVisiblePosition() == this.getChildCount()){
                             whereToSroll = STAY;
-                            Log.i("WhereToScroll","UP");
+                            Log.i("WhereToScroll","STAY");
                         }else{
                             whereToSroll = UP;
                             Log.i("WhereToScroll","UP");

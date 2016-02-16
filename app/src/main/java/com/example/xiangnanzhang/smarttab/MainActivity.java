@@ -64,8 +64,10 @@ public class MainActivity extends FragmentActivity {
             public void onGlobalLayout() {
                 mDragLinearLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 mTop.getLayoutParams().height = mDragLinearLayout.getHeight();
-                mBottom.getLayoutParams().height = mDragLinearLayout.getHeight()+tv_data.getHeight()*2;
-                mViewPager.getLayoutParams().height = mDragLinearLayout.getHeight()+tv_data.getHeight();
+
+                mBottom.getLayoutParams().height = mDragLinearLayout.getHeight()+tv_data.getHeight();
+                mViewPager.getLayoutParams().height = mDragLinearLayout.getHeight()-mSmartTabLayout.getHeight();
+
                 inll_bottom_content.setmYOffset(tv_data.getHeight());
                 mTop.requestLayout();
                 mBottom.requestLayout();
