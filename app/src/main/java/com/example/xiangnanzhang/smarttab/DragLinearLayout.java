@@ -1,6 +1,9 @@
 package com.example.xiangnanzhang.smarttab;
 
 import android.content.Context;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
@@ -44,7 +47,7 @@ public class DragLinearLayout extends LinearLayout {
     private View mBottomContent;
     private boolean has_lv_content = false, has_sv_content = false;
 
-
+    private boolean isInControl = false;
     private InviteNewLinearLayout innl_bottom;
     public DragLinearLayout(Context context) {
         super(context);
@@ -65,6 +68,36 @@ public class DragLinearLayout extends LinearLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+//        int eId = ev.getAction();
+//        float y = ev.getY();
+//        switch (eId){
+//            case MotionEvent.ACTION_DOWN:
+//                mFloatLastY = y;
+//                break;
+//            case MotionEvent.ACTION_MOVE:
+//                float dy = y - mFloatLastY;
+//                if(Math.abs(dy) > mTouchSlop){
+//                    if(mBottomContent != null && !isInControl && dy >0){
+//                        isInControl = true;
+//                        recordTabLoc(mBottomContent.findViewById(R.id.tv_data));
+//                        ViewPager vp = (ViewPager)mBottomContent.findViewById(R.id.my_viewpager);
+//                        int currentId = vp.getCurrentItem();
+//                        PagerAdapter pagerAdapter = vp.getAdapter();
+//                        Fragment fragment =(Fragment)pagerAdapter.instantiateItem(vp, currentId);
+//                        XListView mList = (XListView)fragment.getView().findViewById(R.id.ixl_list);
+//                        View fItem = mList.getChildAt(mList.getFirstVisiblePosition());
+//                        if(fItem != null && fItem.getTop()== 0 && tabOrgLoc[1]==0){
+//                            ev.setAction(MotionEvent.ACTION_CANCEL);
+//                            MotionEvent ev2 = MotionEvent.obtain(ev);
+//                            dispatchTouchEvent(ev2);
+//                            ev2.setAction(MotionEvent.ACTION_DOWN);
+//                            return dispatchTouchEvent(ev2);
+//                        }
+//                    }
+//                }
+//                break;
+//
+//        }
         return super.dispatchTouchEvent(ev);
     }
 
@@ -88,6 +121,7 @@ public class DragLinearLayout extends LinearLayout {
                     if (Math.abs(dy) > mTouchSlop) {
                         /*如果当前是底部的页面*/
                         if (mCurrentLoc == LOC_BOTTOM) {
+                            isInControl = false;
                             if(has_lv_content){
                                 if(lv_content.getChildCount() == 0)
                                     mBoolDragging = true;
@@ -97,8 +131,14 @@ public class DragLinearLayout extends LinearLayout {
                                 if(isScrollToTop() && dy >0)
                                     mBoolDragging = true;
                             }else if(mBottomContent != null && dy > 0){
-                                recordTabLoc(mBottomContent);
-                                if(tabOrgLoc[1]==0)
+                                recordTabLoc(mBottomContent.findViewById(R.id.tv_data));
+                                ViewPager vp = (ViewPager)mBottomContent.findViewById(R.id.my_viewpager);
+                                int currentId = vp.getCurrentItem();
+                                PagerAdapter pagerAdapter = vp.getAdapter();
+                                Fragment fragment =(Fragment)pagerAdapter.instantiateItem(vp, currentId);
+                                XListView mList = (XListView)fragment.getView().findViewById(R.id.ixl_list);
+                                View fItem = mList.getChildAt(mList.getFirstVisiblePosition());
+                                if(fItem != null && fItem.getTop()== 0 && tabOrgLoc[1]==0)
                                     mBoolDragging = true;
                             }else{
                             /*既没有注册listview也没有scrollview*/

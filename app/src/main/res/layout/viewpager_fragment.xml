@@ -12,7 +12,7 @@
         android:textSize="30dp"
         android:gravity="center"/>
 
-    <com.example.xiangnanzhang.smarttab.InviteNewXListView
+    <com.example.xiangnanzhang.smarttab.XListView
         android:id="@+id/ixl_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

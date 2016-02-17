@@ -21,7 +21,7 @@ import android.widget.TextView;
 public class ViewPagerFragment extends Fragment {
     private TextView mtv;
     public static ViewPagerFragment vpFragment;
-    private InviteNewXListView ixl_list;
+    private XListView ixl_list;
     private String[] items;
     private ICallBack myCallback;
     private ICallBack scrollCallback;
@@ -40,60 +40,15 @@ public class ViewPagerFragment extends Fragment {
         mtv = (TextView)view.findViewById(R.id.tv_fragment_idenfier);
         mtv.setText(getArguments().getString("FragmentID"));
         items= getArguments().getStringArray("ListItems");
-        ixl_list = (InviteNewXListView)view.findViewById(R.id.ixl_list);
+        ixl_list = (XListView)view.findViewById(R.id.ixl_list);
         ixl_list.setAdapter(new IxlAdapter());
-//        setListViewHeight(ixl_list);
-        ixl_list.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                ixl_list.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                if (myCallback != null)
-                    myCallback.callback(0, "");
-            }
-        });
-//        ixl_list.setPullLoadEnable(false);
         ixl_list.setPullRefreshEnable(false);
-//        ixl_list.setOverScrollMode(View.OVER_SCROLL_NEVER);
-//        ixl_list.setVerticalScrollBarEnabled(false);
-//        ixl_list.setPullRefreshEnable(false);
-//        ixl_list.setPullLoadEnable(false);
 
-//        ixl_list.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                v.getParent().getParent().requestDisallowInterceptTouchEvent(false);
-//                return false;
-//            }
-//        });
-        ixl_list.setOnScrollListener(new XListView.OnXScrollListener() {
-            boolean scrollFlag = false;
-            int lastVisibleItemPosition;
-            @Override
-            public void onXScrolling(View view) {
-            }
-
-            @Override
-            public void onScrollStateChanged(AbsListView view, int scrollState) {
-                if(scrollState == XListView.OnXScrollListener.SCROLL_STATE_TOUCH_SCROLL)
-                    scrollFlag = true;
-                else
-                    scrollFlag = false;
-            }
-
-            @Override
-            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-                scrollCallback.callback(ixl_list.whereToSroll);
-            }
-        });
         return view;
     }
 
 
 
-
-    public XListView getXListView(){
-        return ixl_list;
-    }
 
     class IxlAdapter extends BaseAdapter{
 

@@ -64,27 +64,17 @@ public class MainActivity extends FragmentActivity {
             public void onGlobalLayout() {
                 mDragLinearLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 mTop.getLayoutParams().height = mDragLinearLayout.getHeight();
-
-                mBottom.getLayoutParams().height = mDragLinearLayout.getHeight()+tv_data.getHeight();
-                mViewPager.getLayoutParams().height = mDragLinearLayout.getHeight()-mSmartTabLayout.getHeight();
-
-                inll_bottom_content.setmYOffset(tv_data.getHeight());
+                mBottom.getLayoutParams().height = mDragLinearLayout.getHeight();
+//                mBottom.getLayoutParams().height = mDragLinearLayout.getHeight()+tv_data.getHeight();
+//                mViewPager.getLayoutParams().height = mDragLinearLayout.getHeight()-mSmartTabLayout.getHeight();
+//
+//                inll_bottom_content.setmYOffset(tv_data.getHeight());
                 mTop.requestLayout();
                 mBottom.requestLayout();
             }
         });
 
-//        mBottom.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-//            @Override
-//            public void onGlobalLayout() {
-//                mBottom.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-//                int t = mBottom.getHeight() + tv_data.getHeight();
-//                mViewPager.getLayoutParams().height = mBottom.getHeight() + tv_data.getHeight();
-//
-//                inll_bottom_content.setmYOffset(tv_data.getHeight());
-//                mViewPager.requestLayout();
-//            }
-//        });
+
 
 
         mViewPager.setAdapter(new VPAdapter(fm));
@@ -97,8 +87,6 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onPageSelected(int position) {
                 ViewPagerFragment fragment = fragmentsMap.get(position);
-//                mDragLinearLayout.registerBottomListView(fragment.getXListView());
-//                mScrollView.setXListView(fragment.getXListView());
             }
 
             @Override
@@ -125,10 +113,7 @@ public class MainActivity extends FragmentActivity {
 
 
 
-
-//        mDragLinearLayout.registerBottomListView(fragmentsMap.get(mViewPager.getCurrentItem()).getXListView());
-//        mDragLinearLayout.registerTabLayout(mSmartTabLayout);
-        mDragLinearLayout.registerBottomContent(tv_data);
+        mDragLinearLayout.registerBottomContent(mBottom);
 
     }
 
@@ -142,12 +127,6 @@ public class MainActivity extends FragmentActivity {
     };
 
 
-    private ICallBack mScrollCallback = new ICallBack() {
-        @Override
-        public void callback(int callCode, Object... param) {
-            inll_bottom_content.doScroll(callCode);
-        }
-    };
 
 
     class VPAdapter extends FragmentStatePagerAdapter {
@@ -161,7 +140,6 @@ public class MainActivity extends FragmentActivity {
             ViewPagerFragment fragment;
             if(fragmentsMap.get(position) == null){
                 fragment = new ViewPagerFragment();
-                fragment.setScrollCallback(mScrollCallback);
                 fragmentsMap.put(position, fragment);
             }
             fragment = fragmentsMap.get(position);

@@ -57,13 +57,13 @@ public class InviteNewXListView extends XListView {
                     }
                     /*上滑*/
                     else{
-                        if(this.getFirstVisiblePosition() == this.getChildCount()){
-                            whereToSroll = STAY;
-                            Log.i("WhereToScroll","STAY");
-                        }else{
+//                        if(this.getFirstVisiblePosition() == this.getChildCount()){
+//                            whereToSroll = STAY;
+//                            Log.i("WhereToScroll","STAY");
+//                        }else{
                             whereToSroll = UP;
                             Log.i("WhereToScroll","UP");
-                        }
+//                        }
                     }
                 }
                 mFloatLastY = floatY;
